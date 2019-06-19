@@ -1,7 +1,26 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>freelance</groupId>
-  <artifactId>thread</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>BusReservation</name>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<modelVersion>4.0.0</modelVersion>
+<groupId>bus.reservation.client</groupId>
+<artifactId>BusResevation</artifactId>
+<version>0.0.1-SNAPSHOT</version>
+
+<dependencies>
+<dependency>
+<groupId>junit</groupId>
+<artifactId>junit</artifactId>
+<version>4.13-beta-3</version>
+<scope>test</scope>
+</dependency>
+</dependencies>
+<distributionManagement>
+<repository>
+<uniqueVersion>false</uniqueVersion>
+<id>demo</id>
+<name>demo</name>
+<url>http://localhost:8081/repository/demo//</url>
+<layout>default</layout>
+</repository>
+</distributionManagement>
 </project>
