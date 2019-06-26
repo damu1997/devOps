@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <bean id = "emp1" class = "com.startup.damu">
+      <property name = "eid" value = "466"/>
+      <property name = "ename" value = "damu"/>
+      <property name = "dept" value = "ece"/>
+      
+   </bean>
+   
+   <bean id = "emp2" class = "com.startup.damu">
+      <property name = "eid" value = "465"/>
+      <property name = "ename" value = "viki"/>
+      <property name = "dept" value = "cse"/>
+      </bean>
+
+</beans>
