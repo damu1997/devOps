@@ -18,8 +18,8 @@ public class Post_request {
 public void RegistrationSuccessful() {
 	
 	  //specify the URL
-	 	RestAssured.baseURI="	http://restapi.demoqa.com/customer" + 
-	 			"";
+	 	RestAssured.baseURI=	"http://restapi.demoqa.com/customer" 
+	 			
 	//RequestObjectt
 	RequestSpecification httprequest=RestAssured.given();
 	//Sending along with post request
