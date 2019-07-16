@@ -12,6 +12,7 @@ import io.restassured.specification.RequestSpecification;
 public class Post_request {
 
 @Test	
+// post the data in json format
 public void RegistrationSuccessful() {
 	
 	  RequestSpecification request=RestAssured.given();

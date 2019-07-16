@@ -11,6 +11,7 @@ import io.restassured.specification.RequestSpecification;
 public class PUT {
 
 @Test
+//inserting the data into header id 2
 public void put() {
 	RequestSpecification request=RestAssured.given();
 	  request.header("Content-Type","application/json");

@@ -11,6 +11,7 @@ public class DELETE {
 
 	
 	@Test
+	//deleting the 4 header data
 	public void delete() {
 		  RequestSpecification request=RestAssured.given();
 		 Response response=request.delete( "http://localhost:3000/posts/4");	

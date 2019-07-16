@@ -17,6 +17,7 @@ import static io.restassured.RestAssured.*;
 public class GETBDDMethod {
 	
 @Test
+//im checking the content length,statuscode,id size
 public void test_NumberOfCircuitsFor2017(){
 given().
 when().
@@ -31,6 +32,7 @@ header("Content-Length", equalTo("4551"));
 }
 
 @Test
+//im checking the time duration
 public void test_seasons() {
 given().
 when().	
@@ -43,6 +45,7 @@ log();
 
 }
 @Test
+//Printing the response
 public void ResponseForF1Race() {
 RestAssured.baseURI="http://ergast.com/api/f1/seasons.json";
 RequestSpecification httprequest= RestAssured.given();
@@ -51,6 +54,7 @@ String responseBody=response.getBody().asString();
 System.out.print(responseBody);	
 }
 @Test
+//getting the weather report and printing
 public void GetWeatherDetailsValidCity() {
 RestAssured.baseURI="http://restapi.demoqa.com/utilities/weather/city";
 RequestSpecification httprequest=RestAssured.given();
@@ -60,6 +64,7 @@ System.out.print(responseBody);
 }
 
 @Test
+//testing with respect to invalid get header
 public void GetWeatherDetailsInvalidCity()
 {
 	RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
