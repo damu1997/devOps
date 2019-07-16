@@ -37,7 +37,7 @@ when().
 get("http://ergast.com/api/f1/seasons.json").
 then().
 assertThat().
-//time(lessThan(350l)).
+time(lessThan(350l)).
 and().
 log();
 
@@ -59,7 +59,7 @@ String responseBody=response.getBody().asString();
 System.out.print(responseBody);	
 }
 
-//@Test
+@Test
 public void GetWeatherDetailsInvalidCity()
 {
 	RestAssured.baseURI = "http://restapi.demoqa.com/utilities/weather/city";
